@@ -11,12 +11,6 @@ const projectsData = [
     imgSrc: '/static/images/sunflower.png',
     href: 'https://github.com/skececi/well',
   },
-  {
-    title: 'The Big Pineapple',
-    description: `Gamification of Doing Good`,
-    imgSrc: '/static/images/sunflower.png',
-    href: 'https://github.com/skececi/well',
-  },
 ]
 
 export default projectsData
