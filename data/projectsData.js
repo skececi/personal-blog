@@ -10,7 +10,7 @@ const projectsData = [
     description: `Automated Hospital Shift Scheduling`,
     imgSrc: '/static/images/sunflower.png',
     href: 'https://github.com/skececi/shift-doctor',
-  },, 
+  },
   {
     title: 'Causal Inference of COVID',
     description: `Epidemiological factors influencing the spread of COVID using the tools of Pearlian causal inference`,
