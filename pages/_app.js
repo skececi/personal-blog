@@ -7,7 +7,7 @@ import Head from 'next/head'
 import siteMetadata from '@/data/siteMetadata'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
 
 
 const isDevelopment = process.env.NODE_ENV === 'development'
