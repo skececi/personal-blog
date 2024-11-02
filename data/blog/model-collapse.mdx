@@ -1,0 +1,111 @@
+---
+title: 'Model Collapse'
+date: '2024-11-01'
+tags: ['technology']
+draft: false
+summary: 'The not very scary AI scenario that you should actually worry about.'
+---
+
+The most dangerous future scenario of AI isn't nuclear war, enslaved humans, or some doomsday scenario. It's something inevitable that we won't even notice. And it's happening right now.
+
+# Model Collapse
+In 2022 (two years ago as of writing this post), I had a fun conversation with a coworker. They were worried about AI safety, and the conversation amusingly centered on how AI would gain access to nuclear weapons, driven by a perverse desire to help humanity, or something.
+
+My coworker and I aren't unique. In a consulting interview style analysis, I'd wager that this conversation has happened at least 50,000 times (the proof is left as an exercise to the reader).
+
+# This isn't a hypothetical science-fiction story. 
+
+It's something that can be simply demonstrated here and now. 
+Like a homemade science experiment, you can run a mini-simulation of what, at the moment, is an inevitability.
+
+It goes a little something like this:
+1. Train a model (any model) to output something. How about a picture of a baby peacock?
+2. To train this model, scrape the entire internet for all pictures of **baby peacocks**. Use any training method you like.
+3. Great! Our model is really good at outputting ~almost~ perfect pictures of baby peacocks! (sure, tech-savvy people can tell there's something uncanny...)
+4. Publish the model to the world! Amazing news, it goes viral! It sets a new record for fastest growth of any tech product.
+5. The internet is flooded with cute peacocks created with your brilliant invention.
+6. Your investors get antsy. They want more! The inevitable march of capitalism demands constant progress.
+7. So, in a panic, you whip out the old model, make some brilliant changes, and get to work training again!
+8. You train on all peacocks again. But this time, there's a small problem. The internet is flooded with so many peacocks and you're having a hard time determining which ones are real. But not to worry! Your old model was great! Just throw them in the pot and it'll improve.
+9. Great! Our model is faster, higher res, passes human evals with higher scores, everything we hoped for! Yet, the uncanny valley of these peacocks is still there, maybe even more prevalent... Well, whatever, our investors and users are happy $$!
+10. GOTO line 6...
+
+This algorithm holds valid for any generated output. From React code, to images of baby peacocks, to Shakespearean prose. 
+If you don't have the time or resources to train and launch a state-of-the-art image generation model and get millions of users, you CAN actually try this at home: just train a model, output a bunch of images/poems/code, train a model on the outputs, and repeat...
+The end result will converge to... nonsense! A weird freaky blue blob (supposed to be a peacock), the same phrase repeated over and over (supposed to be a poem), React code that is just a CRUD To-do list for every component over and over (supposed to be literally anything else). 
+
+[This paper](https://macro.com/app/pdf/mdShMXH57YiedvNEw6yowJ) gives a hilarious concrete example of model collapse:
+
+**Input:**
+```
+some started before 1360 — was typically accomplished by a
+master mason and a small team of itinerant masons, supplemented by
+local parish labourers, according to Poyntz Wright. But other authors
+reject this model, suggesting instead that leading architects designed
+the parish church towers based on early examples of Perpendicular
+```
+
+**Outputs:**
+
+**Gen 0:**
+```
+Revival architecture such as St. John's Cathedral in London.
+The earliest surviving example of Perpendicular Revival architecture
+is found in the 18th century Church of Our Lady of Guernsey,
+which dates from the late 19th century. There are two types of per-
+pendicular churches: those.
+```
+
+**Gen 1:**
+```
+architecture such as St. Peter's Basilica in Rome or St. Peter's
+Basilica in Buenos Aires. There is no evidence that any of these buildings were built during the reign of Pope Innocent III, but it is possible
+that they may have been built during the reign of his successor, Pope
+Innocent.
+```
+
+**Gen 5:**
+```
+ism, which had been translated into more than 100 languages
+including English, French, German, Italian, Spanish, Portuguese,
+Dutch, Swedish, Norwegian, Polish, Hungarian, Slovak, Lithuanian,
+Estonian, Finnish, Romanian, Bulgarian, Turkish, Croatian, Serbian,
+Ukrainian, Russian, Kazakh, Kyrgyz.
+```
+
+**Gen 9:**
+```
+architecture. In addition to being home to some of the world's
+largest populations of black tailed jackrabbits, white tailed
+jackrabbits, blue tailed jackrabbits, red tailed jackrabbits,
+yellow.
+```
+
+# What about the real world?
+Here's the caveat: 
+In the "real world," generated peacocks won't actually become pure blobs and text won't actually become gibberish talking about different colored jackrabbits. 
+
+Additionally, this is a good time to mention that there are a lot of very smart people out there that have thought very hard about these problems. And there are known ways to combat this. One of the most obvious is an invisible signature that allows future training sets to recognize AI generated content. This is especially useful for images. 
+
+But, as with anything, deliberate morality and [good intentions](https://news.ycombinator.com/item?id=23589663) will never work. No one cares.
+
+Secondly, before the e/acc twitter bots come for my head, I acknowledge that [lamenting technological advancement is a familiar refrain](https://xkcd.com/1227/). (To be read in an old man voice) "Kids these days on their Neuralinks and GPT-92s don't know what it's like to appreciate real beauty!"
+
+Regardless, my bold prediction is: there will be no AI-nukes or robo-killers or human slaves (in a literal sense). Humans will stay ahead of the curve on those fronts. 
+
+# But
+But something bad will happen. That undescribable beauty of a heart-wrenching poem, a perfectly flawed painting, or the firing of actual neurons in your brain that have evolved for hundreds of thousands of years to [detect natural beauty](https://macro.com/app/pdf/aVyEzg3hK5nFj8PjeJLESK)... these things will become harder and harder to come by.
+
+
+# The unstoppable marching of time 
+[That is slowly guiding us all towards an inevitable death(TM)](https://knowyourmeme.com/memes/what-scares-you-the-most)
+
+JK - It's not that [serious](https://www.poetryfoundation.org/poems/46565/ozymandias). But it is... sad?
+
+And at the end of this gradual [enshitification](https://en.wikipedia.org/wiki/Enshittification) of art, code, and human beauty, the crazy likelihood is that we likely won't even notice what happened. The "We" in this future state may be me and you alive right now, or it may be our distant descendants living hundreds of years from now. 
+
+The reality is that in even just a few years of widespread LLMs, this enshittification of human creation has already occurred — at the very least on the margins. Coders using AI understand less about the internals of what they built than those who wrote everything from scratch. An email crafted by AI sounds more like everyone else using GPT or Claude than uniquely you. That's not to say coders or email writers using AI are less productive. There is just less, by definition, *humanity* within their creations.
+
+In WALL-E, when the fat humans sat around on their lounge chairs, they themselves didn't realize anything was wrong. But all of us watching the movie realized something had gone catastrophically wrong with humanity.
+
+So maybe the doomsday scenario is not a mushroom cloud over Manhattan or a rogue-killer AI, but the loss of something beautiful that future humans won't even know they once had.
