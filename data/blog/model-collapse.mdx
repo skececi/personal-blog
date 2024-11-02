@@ -1,6 +1,6 @@
 ---
 title: 'Model Collapse'
-date: '2024-11-01'
+date: '2024-11-02'
 tags: ['technology']
 draft: false
 summary: 'The not very scary AI scenario that you should actually worry about.'
@@ -9,27 +9,27 @@ summary: 'The not very scary AI scenario that you should actually worry about.'
 The most dangerous future scenario of AI isn't nuclear war, enslaved humans, or some doomsday scenario. It's something inevitable that we won't even notice. And it's happening right now.
 
 # Model Collapse
-In 2022 (two years ago as of writing this post), I had a fun conversation with a coworker. They were worried about AI safety, and the conversation amusingly centered on how AI would gain access to nuclear weapons, driven by a perverse desire to help humanity, or something.
+In 2022 (two years ago as of writing this post), I had a fun conversation with a coworker. He was worried about AI safety, and our conversation amusingly explored how AI would gain access to nuclear weapons and launch them. In our imaginary world, the AI was driven by a perverse desire to help humanity — or something.
 
-My coworker and I aren't unique. In a consulting interview style analysis, I'd wager that this conversation has happened at least 50,000 times (the proof is left as an exercise to the reader).
+My coworker and I aren't unique. I'd wager that this conversation has happened at least 50,000 times (the proof is left as an exercise to the reader).
 
 # This isn't a hypothetical science-fiction story. 
 The thing is, Model Collapse — or what I will talk about more broadly here as creativity drain of AI — isn't some sci-fi, futuristic scenario.
 
 It's something that can be simply demonstrated here and now. 
 
-Like a homemade science experiment, you can run a mini-simulation of what is an inevitability.
+Like a homemade science experiment, you can run a mini-simulation.
 
 It goes a little something like this:
-1. Train a model (any model) to output something. How about a picture of a baby peacock?
-2. To train this model, scrape the entire internet for all pictures of **baby peacocks**. Use any training method you like.
-3. Great! Our model is really good at outputting ~almost~ perfect pictures of baby peacocks! (some tech-savvy people can tell there's something... off and uncanny)
+1. Train a model to output something, anything. How about a picture of a baby peacock?
+2. Scrape the entire internet for all pictures of **baby peacocks**. Use any training method you like.
+3. Great! Our model is really good at outputting pictures of baby peacocks! (some tech-savvy people can tell there's something... off and uncanny)
 4. Now publish the model to the world! Amazing news, it goes viral! It sets a new record for the fastest tech product to 100 million users. 
-5. The internet is flooded with cute peacocks created with your brilliant invention.
+5. The internet is flooded with cute peacocks.
 6. Sadly, there's no time to rest on your laurels. The inevitable march of capitalism demands constant progress. Your competitors catch up. Your investors get antsy.
 7. So, in a panic, you whip out the old model, make some brilliant changes, and get to work training again!
-8. You train on all peacocks again. But this time, there's a small problem. The internet is flooded with so many peacocks and you're having a hard time determining which ones are real. But not to worry! Your old model was great! Just throw everything in the pot and things will surely improve.
-9. Great! Our new model is faster, cheaper, higher resolution, passes human evals with higher scores, everything we hoped for! Yet, the uncanny valley of these peacocks is still there, maybe even more prevalent... Well, whatever, our investors and users are happy. And we're making so much money!
+8. Like before, you train on all pictures of peacocks. But this time, there's a small problem. The internet is flooded with so many generated peacocks and you're having a hard time determining which ones are real. Just throw everything in the pot and things will surely improve, right?
+9. Phew! Our new model is faster, cheaper, higher resolution, passes human evals with higher scores, everything we hoped for! Yet, the uncanny valley of these peacocks is still there, maybe even more prevalent... Well, whatever, our investors and users are happy. And we're making so much money!
 10. GOTO line 6...
 
 This algorithm holds valid for any form of generated output. From React code, to images of baby peacocks, to Shakespearean prose. 
@@ -37,6 +37,8 @@ This algorithm holds valid for any form of generated output. From React code, to
 If you don't have the time or resources to train and launch a state-of-the-art image generation model and get millions of users, you CAN actually try this at home: just train a model, output a bunch of images/poems/code, train a model on the outputs, and repeat...
 
 The end result will converge to... nonsense! A weird freaky blue blob (supposed to be a peacock), the same phrase repeated over and over (supposed to be a poem), React code that is just the word `function` over and over. 
+
+# What does model collapse look like?
 
 [This paper](https://macro.com/app/pdf/mdShMXH57YiedvNEw6yowJ) gives a hilarious concrete example of model collapse:
 
@@ -59,15 +61,7 @@ is found in the 18th century Church of Our Lady of Guernsey,
 which dates from the late 19th century. There are two types of per-
 pendicular churches: those.
 ```
-
-**Gen 1:**
-```
-architecture such as St. Peter's Basilica in Rome or St. Peter's
-Basilica in Buenos Aires. There is no evidence that any of these buildings were built during the reign of Pope Innocent III, but it is possible
-that they may have been built during the reign of his successor, Pope
-Innocent.
-```
-
+Not bad!
 **Gen 5:**
 ```
 ism, which had been translated into more than 100 languages
@@ -76,7 +70,7 @@ Dutch, Swedish, Norwegian, Polish, Hungarian, Slovak, Lithuanian,
 Estonian, Finnish, Romanian, Bulgarian, Turkish, Croatian, Serbian,
 Ukrainian, Russian, Kazakh, Kyrgyz.
 ```
-
+Well, that's a lot of languages?
 **Gen 9:**
 ```
 architecture. In addition to being home to some of the world's
@@ -84,20 +78,22 @@ largest populations of black tailed jackrabbits, white tailed
 jackrabbits, blue tailed jackrabbits, red tailed jackrabbits,
 yellow.
 ```
+Jackrabbits??!
 
 # What about the real world?
 Here's the caveat: 
-In the "real world," generated peacocks won't actually become pure blobs and text won't actually become gibberish talking about different colored jackrabbits. 
+In the "real world," generated peacocks won't actually become blobs and text won't actually become gibberish talking about jackrabbits. 
 
 There are a lot of very smart people out there that have thought very hard about these problems. And there are known ways to combat this. One of the most obvious is an invisible signature that allows future training sets to recognize AI generated content. This is especially useful for images. 
+
+# But...
 
 But, as with anything, deliberate morality and [good intentions](https://news.ycombinator.com/item?id=23589663) will never work. No one cares enough.
 
 Secondly, before the e/acc twitter bots come for my head, I acknowledge that [lamenting technological advancement is a familiar refrain](https://xkcd.com/1227/). (To be read in an old man voice) "Kids these days on their Neuralinks and GPT-92s don't know what it's like to appreciate real beauty!" —Sam circa 2090
 
-Regardless, my bold prediction is: there will be no AI-nukes or robo-killers or human slaves (in a literal sense). Humans will stay ahead of the curve on those fronts. But something very bad will happen
+Regardless, my bold prediction is: there will be no AI-nukes or robo-killers or human slaves (in a literal sense). Humans will stay ahead of the curve on those fronts. But something very bad will happen.
 
-# But
 That undescribable beauty of a heart-wrenching poem, a perfectly flawed painting, or the firing of actual neurons in your brain that have evolved for hundreds of thousands of years to [detect natural beauty](https://macro.com/app/pdf/aVyEzg3hK5nFj8PjeJLESK)... these things will become harder and harder to come by.
 
 
@@ -106,10 +102,16 @@ That undescribable beauty of a heart-wrenching poem, a perfectly flawed painting
 
 JK - It's not that [serious](https://www.poetryfoundation.org/poems/46565/ozymandias). But it is... sad?
 
-And at the end of this gradual [enshitification](https://en.wikipedia.org/wiki/Enshittification) of art, code, and human beauty, the crazy likelihood is that we likely won't even notice what happened. The "We" in this future state may be me and you alive right now, or it may be our distant descendants living hundreds of years from now. 
+At the end of this process lies the gradual [enshitification](https://en.wikipedia.org/wiki/Enshittification) of art, code, and human beauty. 
 
-The reality is that in even just a few years of widespread LLMs, this enshittification of human creation has already occurred — at the very least on the margins. Coders using AI understand less about the internals of what they built than those who wrote everything from scratch. An email crafted by AI sounds more like everyone else using GPT or Claude than uniquely you. That's not to say coders or email writers using AI are less productive. There is just less, by definition, *humanity* within their creations.
+The crazy likelihood is that we won't even notice what happened. The "We" in this future state may be me and you alive right now, or it may be our distant descendants living hundreds of years from now. 
+
+The reality is that in even just a few years of widespread LLMs, this enshittification of human creativity has already occurred. Coders using AI understand less about the internals of what they built than those who wrote everything from scratch. An email crafted by AI sounds more like everyone else using GPT or Claude than your unique voice. Most good writers, and people familiar with AI can even tell that annoying, chipper, "AI-ness" from a mile away. 
+
+That's not to say coders or email writers using AI are less productive. There is just less *humanity* (by definition) within their creations.
+
+# Fitter, Happier, More productive
 
 In WALL-E, when the [fat humans](https://www.youtube.com/watch?v=5kngspqvHa0) sat around on their lounge chairs, they themselves didn't realize anything was wrong. But all of us watching the movie realized something had gone catastrophically wrong with humanity.
 
-So maybe the doomsday scenario is not a mushroom cloud over Manhattan or a rogue-killer AI, but the loss of something beautiful that future humans won't even know they once had.
+So, the doomsday scenario is not a mushroom cloud over Manhattan or a rogue-killer AI. Most likely, it's the slow degradation of something beautiful that future humans won't even know they once had.
