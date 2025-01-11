@@ -1,0 +1,80 @@
+---
+title: 'Everything I learned in 4 years as CTO of Macro'
+date: '2025-01-11'
+tags: ['life']
+draft: false
+summary: 'After 4 years at Macro, this is everything I learned building an engineering team from 0 -> 10 people and a product from nothing to something.'
+
+---
+
+After 4 years as CTO of Macro, this is everything* I learned building an engineering team from 0 -> 10 people and a product from nothing to something. 
+
+I learned these things mostly by doing, failing, and trying again. Some of these things I still fail at, but at least I learned them! I’m confident that you’ll find something to glean, regardless of what line of work you are in.
+
+In no particular order:
+
+---
+
+- First impressions and initial momentum are sticky
+  - Like launching a cannon: once the projectile is in the air, there’s not much you can do to steer it. You can course correct on the fly, but it’s hard to fight inertia.
+  - On the product side, people form an opinion quickly. Capture their attention and wonder immediately, and things become very easy.
+- This principle is just as true on the interpersonal side. 
+  - As I grew as CTO and engineering manager, there was a dillineation in the way my engineering team viewed me. Engineers that joined early saw me at my most novice and those that joined late saw me as a more confident and experienced manager. 
+  - Those that joined late never saw the inexperienced Sam, and those that joined early always remembered the inexperienced Sam.
+  - In theory, the solution is to throw away the past. There is no fixed self. In reality, impressions are sticky.
+- Bad 1:1s are worse than useless. Bad 1:1s are just “going through the motions.” They make you feel like you’re in an interview. 
+- Good 1:1s are genuine connection. They probably aren’t even labelled as “1:1s” on your calendar. They might look like going over to someone’s desk and chatting or asking to go for a walk.
+---
+- There is never a “eureka” moment where it all clicks at a startip. The goal should be to keep the slope positive (taken over a wide enough window) and as steep as possible. 
+- There seem to be turning points when a company is viewed from the outside. Big releases, fundraising annoucements. But those are simply a result of the rate that information is shared (and what information is shared).
+- Advice that you hear from a successful startup founder might not work for you. 
+- For any topic, I can show you two equally successful founders that have polar opposite opinions.
+  - "Embrace fully remote" (Linear, Vercel, Mercury) vs. "5-days in person is the only way" (Anduril, Anthropic, ScaleAI). 
+  - Which one is “correct”? Who’s advice should you follow?
+  - The actual “correct” answer is the one that works for you. 
+---
+- When coding or designing a system, write out the highest level psuedo code possible. Make it absurdly simple.
+  ```
+  input = getUserInput();
+  response = sendInputToServer(input); 
+  handleResponseAccordingly(response);
+  ```
+  - Then fill in the functions and rename for clarity. Repeat this for each function recursively. Continue as many levels down as you need until it becomes trivial to complete.
+- I apply this same method of thinking to any task that feels too big to fit in my brain in one go (I call my context window). It helps alleviate fear, procrastination, and decision paralysis. Making anything is literally just doing one small thing at a time. That’s why Legos are so fun.
+  - If you’re putting off going to the gym, set a goal to go and do one single rep. Chances are, once you’re there, you’ll find it easy (and maybe enjoyable) to keep going.
+  - If you’re putting off writing a blog post, set a goal to write one sentence.
+---
+- "If you don’t know yet what you should work on, the most important thing is to figure it out. You should not grind at a lot of hard work until you figure out what you should be working on." —Naval
+  - At the beginning of Macro (CoParse back then), we spent too little time thinking of what to build, and too much time building it.
+  - We built many things that never moved the needle. We spent a lot of time hashing out things that didn’t matter.
+- We probably didn’t spend enough time thinking about one-way door decisions.
+  - We didn’t spend enough time thinking about the ramifications of forking LibreOfficeKit (an existing open source docx editor) versus making our own editor from scratch. We thought forking was a non-consequential idea and would save us time. So we went with it. In reality, it was company shaping.
+  - Decisions that seem small can be company shaping because they create a butterfly effect. When we forked LibreOfficeKit, it changed the way we presented the product. And the way we viewed what we were building. We promised improvements to customers. Sales cycles became contigent upon things working. It became harder and harder to abandon. 
+  - The sunk cost fallacy is a fallacy. 
+- It’s harder than you think to not do something.
+  - The same goes for not building something. We built a lot of things that we should not have. 
+  - Like many ambitious people, the compulsion towards doing _something... anything!!_ can often be irresistible.
+---
+- It helps to have a “thing.” This goes for the way you present yourself. But you can’t fake it. You can’t pretend to be cool and unique. That would not be cool. Nor unique.
+  - "[No one can compete with you on being you.](https://x.com/naval/status/797865441783709696)"
+  - Craig Federici does this well. Charli XCX does this well. Steve jobs did this better than everyone. They have a vibe that can be labelled as “them”. 
+  - I would often tell people, “Just Steve Jobs it!” Everyone got what I meant. If your name can be used as a verb, you’ve made it.
+  - Litmus test: if you’re playing charades, can you successfully pretend to be that person? If so, they do it well.
+    - e.g. Sundar Pichai fails the test. How tf do you act as Sundar Pichai?
+  - A coworker told me: “You’re going Sam-mode again!” when I got obsessed about a crazy idea. I took it as a complement.
+---
+- When building, build the higher level thing that can create the lower level thing.  
+- For example: instead of building a hard-coded set of analytics charts, build something that can make charts from data.
+  - Instead of building a car, Henry Ford built a manufacturing process to build cars.
+- Think extremes. Helpful for: finding edge-cases, load testing, deriving a framework for reality.
+
+- Any investment that is predicated on things staying as they are is doomed to fail. 
+  - This was inspired by the rise and fall of Peloton and Zoom stock (and many others) during COVID. People (capital markets) thought that COVID would last forever. They didn’t realize that everything is impermanent.
+- I was subsequently reminded of this principle via Buddhism. Nothing is permanent, things always change. Act accordingly.
+
+---
+- Nothing will ever be perfect. Don’t let perfect be the enemy of great.
+- IQ is sometimes more of a hindrance than a benefit.
+  - [grugbrain.dev](https://grugbrain.dev)
+- What happens when you throw away conceptual thinking and planning altogether and just do what’s right in front of you?
+
