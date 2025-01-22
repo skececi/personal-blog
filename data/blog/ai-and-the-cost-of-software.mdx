@@ -51,38 +51,5 @@ Suffice it to say: The goal of this repo is to drive the cost of creating a basi
 
 Surely this means no one will ever have to do this again ;\) — cue XKCD: https://xkcd.com/927
 
-# Using + Integrating
-## Pre-reqs
-- `uv` package manager (install with `curl -LsSf https://astral.sh/uv/install.sh | sh`)
-- `node/npm`
-
-## Quickstart
-1. Fork/clone this repo.
-2. Set up `backend`:
-   1. `cp .env.sample .env` 
-   2. Add your desired API key(s) + which models you want to support. 
-   3. Host the backend however you want (see caveats).   
-      1. Locally: `cd backend && uv run fastapi dev app.py`
-3. Set up `frontend`
-   1. `cp .env.sample .env`
-   2. Add the URL of your backend server. 
-   3. Host the frontend however you want.
-   4. Locally: `cd frontend && npm i && npm run dev`
-
-
-# Notes
-* CSS and UI wise, I've intentionally gone for "tabula rassa". I use a lot of default HTML tags instead of custom UI/libraries. Customize to your liking.
-* Persistence is done via localstorage. You probably want to swap this out for account-based DB storage, but since my goal is cleaner integration into your existing system, I am leaving this as an exercise for the implementer.
-* Depending on usage, directly calling the API is generally much cheaper than paying $20/month.
-* Hosting is up to you. If that's a barrier, consider this a good time to learn about hosting simple frontends and backends! I like Vercel and Railway.
-  * https://vercel.com/docs/deployments/deployment-methods
-  * https://docs.railway.com/quick-start#deploying-your-project---from-github
-  * Or run it on the Raspberry Pi in your basement.
-* I use `uv` for Python pacmanagement. I'm a big fan so check out [astral.sh](astral.sh).
-* I've started with only OpenAI and Anthropic for the models. Sorry Google. As of Jan 2025 your model is still the worst.
-* TODOs:
-  * support open source + self-hosted models. If that is of interest, do it!
-  * streaming.
-  * 80/20 of CSS, UX nits.
 
 
