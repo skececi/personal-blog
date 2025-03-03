@@ -1,5 +1,5 @@
 ---
-title: 'Everything I learned in 4 years as CTO of Macro'
+title: 'Everything I learned building Macro for 4 years'
 date: '2025-03-03'
 tags: ['work']
 draft: false
@@ -47,7 +47,7 @@ In no particular order:
 - An ounce of programming is worth a ton of Training and Inference.
   - Because of the ease and ubiquity of language models, it becomes second-nature to just chuck in data and prompt to get an output. But some old-fashioned thinking can usually get you very far. 
   - The hybrid approach is usually always correct. Chuck it in a language model, but do pre and post-processing in a deterministic way. Format the text, strip out terms, dynamically include certain information (if statements!).
-- Consider the simple example of formatting a JSON string. Sheldon, who has been coding COBOL since 1874, writes an algorithm to parse it ehow he needs. He hosts a basic webservice and gives it some minimal resources – it's just running 5 lines of code. 
+- Consider the simple example of formatting a JSON string. Sheldon, who has been coding COBOL since 1874, writes an algorithm to parse it how he needs. He hosts a basic webservice and gives it some minimal resources – it's just running 5 lines of code. 
 - Breighden just learned about language models and the shiny new OpenAI structured output functionality. So he uses bolt.new and the Replit Agent to spin up a webservice on a serverless Kubernetes cluster, connected to a vector database for embeddings, using the OpenAI API to pass in the JSON and get back the output. 10% of the time the model hallucinates, and 5% of the time OpenAI servers are down.
   - In this case, Breighden could learn a few things from ol' Sheldon. So could many readers of this post.
 ---
@@ -62,6 +62,8 @@ In no particular order:
 
 ---
 Ok, back to the non-nerd stuff!
+---
+
 - "If you don't know yet what you should work on, the most important thing is to figure it out. You should not grind at a lot of hard work until you figure out what you should be working on." —Naval
   - At the beginning of Macro (CoParse back then), we spent too little time thinking of what to build, and too much time building it.
   - We built many things that never moved the needle. We spent a lot of time hashing out things that didn't matter.
