@@ -66,6 +66,15 @@ module.exports = withBundleAnalyzer({
       },
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog/:slug',
+        destination: '/:slug',
+        permanent: true,
+      },
+    ]
+  },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
